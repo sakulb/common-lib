@@ -1,4 +1,5 @@
 import AAbout from './AAbout.vue'
 import AButton from './AButton.vue'
+import AChip from './AChip.vue'
 
-export { AAbout, AButton }
+export { AAbout, AChip, AButton }
