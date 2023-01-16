@@ -5,13 +5,14 @@
   ],
   "main": "./dist/common-lib.umd.js",
   "module": "./dist/common-lib.es.js",
+  "types": "./dist/common-lib.es.d.ts",
   "exports": {
     ".": {
       "import": "./dist/common-lib.es.js",
       "require": "./dist/common-lib.umd.js"
     }
   },
-  "version": "0.0.4",
+  "version": "0.0.6",
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {
