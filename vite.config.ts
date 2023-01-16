@@ -3,8 +3,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
 import dts from 'vite-plugin-dts'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   build: {
     lib: {
@@ -23,7 +23,12 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    vuetify(),
+    vuetify({ autoImport: true }),
+    VueI18nPlugin({
+      globalSFCScope: true,
+      runtimeOnly: false,
+      include: path.resolve(__dirname, 'src/locales/**'),
+    }),
     dts({ insertTypesEntry: true })
   ],
 })

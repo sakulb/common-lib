@@ -12,7 +12,7 @@
       "require": "./dist/common-lib.umd.js"
     }
   },
-  "version": "0.0.6",
+  "version": "0.0.10",
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {
@@ -20,18 +20,18 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "@mdi/font": "^7.1.96",
-    "sass": "^1.57.1",
-    "vue": "^3.2.45"
-  },
   "devDependencies": {
+    "@mdi/font": "^7.1.96",
     "@types/node": "^18.11.18",
-    "@vitejs/plugin-vue": "^4.0.0",
+    "vue": "^3.2.45",
+    "vue-i18n": "^9.2.2",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
     "typescript": "^4.9.3",
+    "sass": "^1.57.1",
     "vite": "^4.0.0",
     "vite-plugin-dts": "^1.7.1",
     "vite-plugin-vuetify": "^1.0.1",
+    "@vitejs/plugin-vue": "^4.0.0",
     "vue-tsc": "^1.0.24",
     "vuetify": "^3.1.1"
   }
